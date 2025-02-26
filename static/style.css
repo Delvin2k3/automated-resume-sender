@@ -1,0 +1,42 @@
+body {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: #22223b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+input, select, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+button {
+    background: #6a0572;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #9a1f6a;
+}
+.view-jobs {
+    display: inline-block;
+    margin-top: 10px;
+    color: #9a1f6a;
+    text-decoration: none;
+    font-weight: bold;
+}

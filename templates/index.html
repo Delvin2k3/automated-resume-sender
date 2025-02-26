@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Resume Sender</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Your Resume & Choose Job Site</h1>
+        
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="resume">Upload Resume:</label>
+            <input type="file" name="resume" required>
+
+            <label for="job_site">Select Job Site:</label>
+            <select name="job_site" required>
+                <option value="indeed">Indeed</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="naukri">Naukri</option>
+            </select>
+
+            <button type="submit">Upload & Apply</button>
+        </form>
+
+        <a href="/jobs" class="view-jobs">View Job Listings</a>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
